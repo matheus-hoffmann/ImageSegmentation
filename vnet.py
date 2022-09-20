@@ -1,17 +1,17 @@
-def set_vnet_model(img_height:int         = 128,
-                   img_width:int          = 128,
-                   img_depth:int          = 64,
-                   img_channels:int       = 1,
-                   kernel_size:tuple      = (5, 5, 5),
-                   nfilters_input:int     = 16,
-                   activation:str         = 'relu',
-                   kernel_initializer:str = 'he_normal',
-                   activation_output:str  = 'softmax',
-                   optimizer:str          = 'adam',
-                   loss:str               = 'binary_crossentropy',
-                   metrics:list           = ['accuracy'],
-                   show_summary:bool      = False,
-                   show_graph:bool        = False):
+def vnet(img_height:int         = 128,
+         img_width:int          = 128,
+         img_depth:int          = 64,
+         img_channels:int       = 1,
+         kernel_size:tuple      = (5, 5, 5),
+         nfilters_input:int     = 16,
+         activation:str         = 'relu',
+         kernel_initializer:str = 'he_normal',
+         activation_output:str  = 'softmax',
+         optimizer:str          = 'adam',
+         loss:str               = 'binary_crossentropy',
+         metrics:list           = ['accuracy'],
+         show_summary:bool      = False,
+         show_graph:bool        = False):
   # Implementation according to the original article (https://arxiv.org/abs/1606.04797)
 
   #Input
